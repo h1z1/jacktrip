@@ -174,7 +174,6 @@ void Settings::parseInput(int argc, char** argv)
     int ch;
     while ((ch = getopt_long(argc, argv,
                              "n:N:H:sc:SC:o:B:P:U:q:r:b:ztlwjeJ:K:RTd:F:p:DvVhI:G:f:O:a:x:", longopts, NULL)) != -1)
-                             "n:N:H:sc:SC:o:B:P:U:q:r:b:ztlwjeJ:K:RTd:F:p:DvVhI:G:f:O:a:", longopts, NULL)) != -1)
         switch (ch) {
 
         case 'n': // Number of input and output channels

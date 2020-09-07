@@ -127,6 +127,7 @@ JackTrip::JackTrip(jacktripModeT JacktripMode,
     mConnectDefaultAudioPorts(true),
     mIOStatTimeout(0),
     mIOStatLogStream(std::cout.rdbuf()),
+    mAudioTesterP(nullptr),
     mSimulatedLossRate(0.0),
     mSimulatedJitterRate(0.0),
     mSimulatedDelayRel(0.0)

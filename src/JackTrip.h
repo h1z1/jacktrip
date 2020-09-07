@@ -572,6 +572,7 @@ private:
     QSharedPointer<std::ofstream> mIOStatStream;
     int mIOStatTimeout;
     std::ostream mIOStatLogStream;
+    AudioTester* mAudioTesterP;
     double mSimulatedLossRate;
     double mSimulatedJitterRate;
     double mSimulatedDelayRel;
