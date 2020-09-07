@@ -90,6 +90,7 @@ private:
     QString mRemoteClientName;
     JackTrip::underrunModeT mUnderrunMode; ///< Underrun mode
     bool mStopOnTimeout; /// < Stop jacktrip after 10 second network timeout
+    int mBufferStrategy;
 
 #ifdef WAIR // wair
     int mNumNetRevChans; ///< Number of Network Audio Channels (net comb filters)
@@ -117,6 +118,10 @@ private:
     QSharedPointer<std::ofstream> mIOStatStream;
     Effects mEffects;
     AudioTester mAudioTester;
+    double mSimulatedLossRate;
+    double mSimulatedJitterRate;
+    double mSimulatedDelayRel;
+    int mBroadcastQueue;
 };
 
 #endif
